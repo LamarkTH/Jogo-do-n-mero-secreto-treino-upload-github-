@@ -37,7 +37,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite);
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
     if (quantidadeDeElementosNaLista == numeroLimite) {
@@ -51,6 +51,7 @@ function gerarNumeroAleatorio() {
         return numeroEscolhido;
     }
 }
+console.log(numeroEscolhido);
 
 function limparCampo() {
     chute = document.querySelector('input');
